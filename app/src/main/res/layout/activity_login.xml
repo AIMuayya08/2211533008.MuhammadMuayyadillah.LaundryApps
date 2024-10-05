@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAFAFA"
+        android:orientation="vertical"
+        android:padding="@dimen/lg"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="59dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="328dp"
+            android:layout_height="305dp"
+            android:layout_gravity="center"
+            android:src="@drawable/Logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/lg"
+            android:orientation="vertical"
+            android:padding="@dimen/lg">
+
+            <EditText
+                android:id="@+id/edUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_username"
+                android:drawablePadding="@dimen/sm"
+                android:hint="Username"
+                android:padding="@dimen/lg" />
+
+            <EditText
+                android:id="@+id/edPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sm"
+                android:drawableStart="@drawable/ic_password"
+                android:drawablePadding="@dimen/sm"
+                android:hint="Password"
+                android:inputType="numberPassword"
+                android:padding="@dimen/lg" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/lg"
+                android:layout_marginBottom="@dimen/lg"
+                android:backgroundTint="#FFC107"
+                android:padding="@dimen/lg"
+                android:text="Login" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

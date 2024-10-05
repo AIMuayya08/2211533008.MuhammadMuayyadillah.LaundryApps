@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Customer Name -->
+
+    <!-- Transaction ID and Date Row -->
+    <TextView
+        android:id="@+id/tv_customer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:text="FULAN"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/tv_transaction_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TRX-00001"
+            android:textColor="#FF9800"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date/month/Years"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Total Amount and Status -->
+    <TextView
+        android:id="@+id/tv_total_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:background="#ED4242"
+        android:padding="8dp"
+        android:text="Rp. 30.000 - UNPAID - PROSES"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Service Items with Background -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="8dp">
+
+        <!-- Cuci Setrika Section -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="#F9F9F9"
+            android:padding="12dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_cuci_setrika"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="CUCI SETRIKA"
+                    android:textColor="#FF9800"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_price_cuci_setrika"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="Rp. 6.000/Kg"
+                    android:textColor="#808080"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/et_cuci_setrika"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/green_border"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:text="0" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Setrika Section -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="#F9F9F9"
+            android:padding="12dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_setrika"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="SETRIKA"
+                    android:textColor="#FF9800"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_price_setrika"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="Rp. 4.000/Kg"
+                    android:textColor="#808080"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/et_setrika"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/green_border"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:text="0" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Cuci Section -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="#F9F9F9"
+            android:padding="12dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_cuci"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="CUCI"
+                    android:textColor="#FF9800"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_price_cuci"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="Rp. 4.000/Kg"
+                    android:textColor="#808080"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/et_cuci"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/green_border"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:text="0" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <!-- Payment Section with Background -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#F9F9F9"
+        android:padding="12dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:id="@+id/tv_bayar"
+                    android:layout_width="159dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bayar"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_bayar"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/green_border"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_kembalian"
+                    android:layout_width="184dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Kembalian"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_kembalian"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/green_border"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:text="0" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Status Section -->
+
+    <!-- Save and Cancel Buttons -->
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="131dp"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <RadioButton
+            android:id="@+id/radio_proses"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:text="PROSES"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/radio_selesai"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:text="SELESAI"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:translationX="-110dp"
+            android:translationY="60dp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_simpan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#4CAF50"
+            android:padding="12dp"
+            android:text="SIMPAN"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_batal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#F44336"
+            android:padding="12dp"
+            android:text="BATAL"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>
