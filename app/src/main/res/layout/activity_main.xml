@@ -7,7 +7,7 @@
     android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="id.my.adi.laudryadi.MainActivity$MainActivity">
+    tools:context="id.my.adi.laudryadi.MainActivity">
 
     <FrameLayout
         android:id="@+id/frameLayout"
@@ -63,10 +63,11 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="2"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:weightSum="2">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cvLaundry"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/md"
@@ -88,17 +89,18 @@
                         android:src="@drawable/ic_laundry" />
 
                     <TextView
-                        android:textStyle="bold"
                         android:layout_width="wrap_content"
-                        android:layout_marginTop="@dimen/sm"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/sm"
                         android:text="Laundry"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cvLayanan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/md"
@@ -118,13 +120,13 @@
                         android:src="@drawable/ic_service" />
 
                     <TextView
-                        android:textStyle="bold"
-                        android:layout_marginTop="@dimen/sm"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/sm"
                         android:text="Layanan"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
@@ -132,10 +134,11 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="2"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:weightSum="2">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cvPelanggan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/md"
@@ -166,6 +169,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cvPromo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/md"
@@ -185,13 +189,13 @@
                         android:src="@drawable/ic_promo" />
 
                     <TextView
-                        android:textStyle="bold"
-                        android:layout_marginTop="@dimen/sm"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/sm"
                         android:text="Promo"
-                        android:textSize="15sp" />
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>

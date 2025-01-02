@@ -17,12 +17,11 @@
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="59dp"
         tools:ignore="MissingConstraints">
-
-        <ImageView
-            android:layout_width="328dp"
-            android:layout_height="305dp"
-            android:layout_gravity="center"
-            android:src="@drawable/Logo" />
+<ImageView
+    android:layout_width="328dp"
+    android:layout_height="305dp"
+    android:layout_gravity="center"
+    android:src="@drawable/logo"/>
 
         <LinearLayout
             android:layout_width="match_parent"
